@@ -456,7 +456,7 @@ Clients can count on us to deliver consistent results.</p>
                         </div>
                         <div class="ms-3">
                             <h6 class="text-white text-uppercase">Head Office</h6>
-                            <span class="text-white">Hong Kong</span>
+                            <span class="text-white"><a href="#" onclick="changeMap('hk')"> Hong Kong </a></span>
                         </div>
                     </div>
 			<!--
@@ -478,7 +478,7 @@ Clients can count on us to deliver consistent results.</p>
                         </div>
                         <div class="ms-3">
                             <h6 class="text-white text-uppercase">Production Facilities and Assembly Shops</h6>
-                            <span class="text-white">Dongguan & Xinhui, China</span>
+                            <span class="text-white"><a href="#" onclick="changeMap('c1')">Dongguan</a> & <a href="#" onclick="changeMap('c2')">Xinhui</a>, China</span>
                         </div>
                     </div>
                 </div>
@@ -491,6 +491,22 @@ Clients can count on us to deliver consistent results.</p>
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511181.2146506337!2d112.58858227239423!3d22.937827173979933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040837cf8be17b%3A0x549f5d026f6eec22!2z5aSn5Z-U5rGA6KeS6LevNTXomZ_lpKrlubPlt6Xmpa3kuK3lv4My5bqn!5e0!3m2!1szh-TW!2shk!4v1748593463609!5m2!1sen-US!2shk"
             frameborder="0" style="min-height: 500px; border:0;" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
+			    <script>
+			    function changeMap(location) {
+				    const hkurl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511181.2146506337!2d112.58858227239423!3d22.937827173979933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040837cf8be17b%3A0x549f5d026f6eec22!2z5aSn5Z-U5rGA6KeS6LevNTXomZ_lpKrlubPlt6Xmpa3kuK3lv4My5bqn!5e0!3m2!1szh-TW!2shk!4v1748593463609!5m2!1sen-US!2shk";
+				    const c1url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1876848.8394884826!2d112.69124071718747!3d23.253259847968017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340397a7799400e3%3A0xdf5a036382f6715d!2sChang&#39;anzhen%2C%20Dongguan%2C%20Guangdong%20Province%2C%20China%2C%20523850!5e0!3m2!1sen!2shk!4v1750401744632!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade";
+				    const c2url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187740.4661095266!2d113.00370722949086!3d22.636560890590122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34021c55fd8e274b%3A0x411d28300904e301!2sSiqianzhen%2C%20Xinhui%20District%2C%20Jiangmen%2C%20Guangdong%20Province%2C%20China%2C%20529159!5e0!3m2!1sen!2shk!4v1750401998739!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade";
+				    const mapframe = document.getElementById("map");
+				    if (location == "hk") {
+                                            map.src = hkurl;
+				    }else if (location == "c1") {
+					    map.src = c1url;
+				    }else if (location == "c2") {
+					    map.src = c2url;
+				    }
+			    }
+			    </script>
+					
 				<!--<img class="img-fluid w-100" src="img/locations.png" />-->
 			    
 				<!--
