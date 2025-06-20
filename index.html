@@ -442,7 +442,7 @@
 
 
     <!-- Appoinment Start -->
-    <div class="container-fluid appoinment mt-6 mb-6 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div id="appointment" class="container-fluid appoinment mt-6 mb-6 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container pt-5">
             <div class="row gy-5 gx-0">
                 <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
@@ -456,7 +456,7 @@ Clients can count on us to deliver consistent results.</p>
                         </div>
                         <div class="ms-3">
                             <h6 class="text-white text-uppercase">Head Office</h6>
-                            <span class="text-white"><a href="#" onclick="changeMap('hk')"> Hong Kong </a></span>
+                            <span class="text-white"><a href="#appointment" onclick="changeMap('hk')"> Hong Kong </a></span>
                         </div>
                     </div>
 			<!--
@@ -478,7 +478,7 @@ Clients can count on us to deliver consistent results.</p>
                         </div>
                         <div class="ms-3">
                             <h6 class="text-white text-uppercase">Production Facilities and Assembly Shops</h6>
-                            <span class="text-white"><a href="#" onclick="changeMap('c1')">Dongguan</a> & <a href="#" onclick="changeMap('c2')">Xinhui</a>, China</span>
+                            <span class="text-white"><a href="#appointment" onclick="changeMap('c1')">Dongguan</a> & <a href="#appointment" onclick="changeMap('c2')">Xinhui</a>, China</span>
                         </div>
                     </div>
                 </div>
@@ -498,11 +498,13 @@ Clients can count on us to deliver consistent results.</p>
 				    const c2url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187740.4661095266!2d113.00370722949086!3d22.636560890590122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34021c55fd8e274b%3A0x411d28300904e301!2sSiqianzhen%2C%20Xinhui%20District%2C%20Jiangmen%2C%20Guangdong%20Province%2C%20China%2C%20529159!5e0!3m2!1sen!2shk!4v1750401998739!5m2!1sen!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade";
 				    const mapframe = document.getElementById("map");
 				    if (location == "hk") {
-                                            map.src = hkurl;
+                                            mapframe.src = hkurl;
 				    }else if (location == "c1") {
-					    map.src = c1url;
+					    mapframe.src = c1url;
 				    }else if (location == "c2") {
-					    map.src = c2url;
+					    mapframe.src = c2url;
+				    }else {
+					    windows.alert("location");
 				    }
 			    }
 			    </script>
