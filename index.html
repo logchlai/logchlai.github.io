@@ -497,16 +497,23 @@ Clients can count on us to deliver consistent results.</p>
 			<div id="map" style="height: 500px;"></div>
 			<script>
                         // Initialize the map and set its view to your chosen coordinates and zoom level
-                        const map = L.map('map').setView([24.046, 112.115], 7); // Hong Kong coords
+                        const map = L.map('map').setView([23.765, 112.269], 7); // Hong Kong coords
                         // Add OpenStreetMap tiles
-                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        	attribution: '&copy; OpenStreetMap contributors'
-  			}).addTo(map);
+			L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
+  				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
+  				subdomains: 'abcd',
+  				maxZoom: 20
+			}).addTo(map);
+                        //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        //	attribution: '&copy; OpenStreetMap contributors'
+  			//}).addTo(map);
  			// Add a marker
   			L.marker([22.456723, 114.166902])
     				.addTo(map)
     				.bindPopup('Hong Kong Head Office')
-    				.openPopup();
+			L.marker([22.81606, 113.79896])
+				.addTo(map)
+				.bindPopup("<b>Chang'an Dongguan</b><br/> Size: 27000 square feet<br/> Facilities: 14 Injection Molding Machines<br/> Skilled workers: 20")
 			</script>
 
 			    <script>
