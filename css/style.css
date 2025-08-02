@@ -595,7 +595,12 @@
 .vertical-menu a.active {
   background-color: #04AA6D;
   color: white;
-}/*end-variables custom-site-css*/
- /*begin-variables base-font-size*/ 
- html { font-size: 16px; }
- /*end-variables base-font-size*/
+}
+/*end-variables custom-site-css*/
+/*begin-variables base-font-size*/ 
+html { font-size: 16px; }
+/*end-variables base-font-size*/
+
+@media (min-width: 768px) {
+    .sidebar-con.collapse{display: block;}
+}
