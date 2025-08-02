@@ -573,3 +573,29 @@
 .copyright a:hover {
     color: var(--bs-primary);
 }
+
+
+ /*begin-variables custom-site-css*/
+.vertical-menu {
+  width: 250px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}/*end-variables custom-site-css*/
+ /*begin-variables base-font-size*/ 
+ html { font-size: 16px; }
+ /*end-variables base-font-size*/
