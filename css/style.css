@@ -601,7 +601,7 @@
 html { font-size: 16px; }
 /*end-variables base-font-size*/
 
-@media (min-width: 768px) {
+@media (min-width: 984px) {
     .btn-toggle{display: none;}
     .sidebar-con.collapse{display: block;}
 }
