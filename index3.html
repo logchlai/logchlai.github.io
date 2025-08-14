@@ -445,24 +445,23 @@
 
 
     <!-- Appoinment Start -->
-    <div id="appointment" class="container-fluid appoinment mt-6 mb-6 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid appoinment mt-6 mb-6 py-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container pt-5">
             <div class="row gy-5 gx-0">
                 <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-6 text-uppercase text-white mb-4">We Complete Projects in Time
+                    <h1 class="display-6 text-uppercase text-white mb-4">We Complete Welding & Metal Projects in Time
                     </h1>
-                    <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">Our work meets rigorous quality standards and client expectations.
-Clients can count on us to deliver consistent results.</p>
+                    <p class="text-white mb-5 wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus
+                        augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
                     <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.5s">
                         <div class="btn-lg-square bg-white">
                             <i class="bi bi-geo-alt text-dark fs-3"></i>
                         </div>
                         <div class="ms-3">
-                            <h6 class="text-white text-uppercase">Head Office</h6>
-                            <span class="text-white"><a href="#appointment"> Hong Kong </a></span>
+                            <h6 class="text-white text-uppercase">Office Address</h6>
+                            <span class="text-white">Hong Kong</span>
                         </div>
                     </div>
-			<!--
                     <hr class="bg-body">
                     <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.6s">
                         <div class="btn-lg-square bg-white">
@@ -473,73 +472,13 @@ Clients can count on us to deliver consistent results.</p>
                             <span class="text-white">Mon-Sat 09am-5pm, Sun Closed</span>
                         </div>
                     </div>
-			-->
-		    <hr class="bg-body">
-                    <div class="d-flex align-items-start wow fadeIn" data-wow-delay="0.5s">
-                        <div class="btn-lg-square bg-white">
-                            <i class="bi bi-geo-alt text-dark fs-3"></i>
-                        </div>
-                        <div class="ms-3">
-                            <h6 class="text-white text-uppercase">Production Facilities and Assembly Shops</h6>
-                            <span class="text-white"><a href="#appointment">Dongguan</a> & <a href="#appointment">Xinhui</a>, China</span>
-                        </div>
-                    </div>
                 </div>
-		    
-		<!-- Leaflet CSS -->
-                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-                <!-- Leaflet JS -->
-                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-		    
-                <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.7s">
+
+		<div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.7s">
                     <!--<div class="bg-white p-5">
                         <h2 class="text-uppercase mb-4"></h2>-->
                         <div class="row g-3">
-			<!--    <iframe src="https://www.google.com/maps/d/embed?mid=1WB1-19PGhJrfF2azmP-FDpOjKV2oYhc&ehbc=2E312F&noprof=1&hl=en&z=7" height="400"></iframe> -->
-			<!-- let's try openstreetmap -->
-			<div id="map" style="height: 500px;"></div>
-			<script>
-                        // Initialize the map and set its view to your chosen coordinates and zoom level
-                        const map = L.map('map').setView([23.765, 112.269], 7); // Hong Kong coords
-                        // Add OpenStreetMap tiles
-			L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {
-  				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
-  				subdomains: 'abcd',
-  				maxZoom: 20
-			}).addTo(map);
-                        //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        //	attribution: '&copy; OpenStreetMap contributors'
-  			//}).addTo(map);
- 			// Add a marker
-  			L.marker([22.456723, 114.166902])
-    				.addTo(map)
-    				.bindPopup('Hong Kong Head Office')
-			L.marker([22.81606, 113.79896])
-				.addTo(map)
-				.bindPopup("<b>Chang'an Dongguan</b><br/> Size: 27000 square feet<br/> Facilities: 14 Injection Molding Machines<br/> Skilled workers: 20")
-			L.marker([22.4859, 112.8557])
-				.addTo(map)
-				.bindPopup("<b>Siqianzhen, Xinhui</b><br/> Size: 32000 square feet<br/> Facilities: 30 Hydraulic Press & Injection Molding Machines (Max. 300t)<br/> Skilled workers: 30")
-
-			</script>
-
-			    <script>
-			    function changeMap(location) {
-				    const hkurl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511181.2146506337!2d112.58858227239423!3d22.937827173979933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040837cf8be17b%3A0x549f5d026f6eec22!2z5aSn5Z-U5rGA6KeS6LevNTXomZ_lpKrlubPlt6Xmpa3kuK3lv4My5bqn!5e0!3m2!1szh-TW!2shk!4v1748593463609!5m2!1sen-US!2shk";
-				    const c1url = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3173617.115670254!2d113.99563096349738!3d22.517953770402197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340397a7799400e3%3A0xdf5a036382f6715d!2sChang&#39;anzhen%2C%20Dongguan%2C%20Guangdong%20Province%2C%20China%2C%20523850!5e0!3m2!1sen!2shk!4v1750412547279!5m2!1sen!2shk";
-				    const c2url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1187740.4661095266!2d113.00370722949086!3d22.636560890590122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34021c55fd8e274b%3A0x411d28300904e301!2sSiqianzhen%2C%20Xinhui%20District%2C%20Jiangmen%2C%20Guangdong%20Province%2C%20China%2C%20529159!5e0!3m2!1sen!2shk!4v1750401998739!5m2!1sen!2shk";
-				    const mapframe = document.getElementById("map");
-				    if (location == "hk") {
-                                            mapframe.src = hkurl;
-				    }else if (location == "c1") {
-					    mapframe.src = c1url;
-				    }else if (location == "c2") {
-					    mapframe.src = c2url;
-				    }else {
-					    windows.alert("location");
-				    }
-			    }
-			    </script>
+				<iframe src="https://www.google.com/maps/d/embed?mid=1WB1-19PGhJrfF2azmP-FDpOjKV2oYhc&ehbc=2E312F&noprof=1&hl=en&z=7" height="400"></iframe>
 					
 				<!--<img class="img-fluid w-100" src="img/locations.png" />-->
 			    
@@ -589,7 +528,6 @@ Clients can count on us to deliver consistent results.</p>
         </div>
     </div>
     <!-- Appoinment End -->
-
 
     <!-- Team Start -->
 	<!--
